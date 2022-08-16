@@ -8,266 +8,277 @@
     <link rel="stylesheet" href="./tailwind/output.css" />
   </head>
   <body>
-    <section class="headerSection">
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+    <container class="main flex flex-col justify-center">
+      <section class="headerSection">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h7"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost normal-case text-xl">CROSSPLAY.ZONE</a>
-        </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                />
-              </svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+              </ul>
             </div>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="heroSection mb-20">
-      <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content text-center">
-          <div class="max-w-md">
-            <h1 class="text-5xl font-bold">Hello there</h1>
-            <p class="py-6">
-              Here you can find what to play with friends on different platforms
-            </p>
-            <button class="btn btn-primary">Let's find games</button>
+          </div>
+          <div class="navbar-center">
+            <a class="btn btn-ghost normal-case text-xl">CROSSPLAY.ZONE</a>
+          </div>
+          <div class="navbar-end">
+            <button class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                  />
+                </svg>
+                <span
+                  class="badge badge-xs badge-primary indicator-item"
+                ></span>
+              </div>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="selectGame mb-8 space-x-10">
-      <select class="select select-primary w-full max-w-xs">
-        <option disabled selected>Your platform</option>
-        <option>Playstation</option>
-        <option>Xbox</option>
-        <option>Windows</option>
-        <option>Switch</option>
-      </select>
-      <select class="select select-primary w-full max-w-xs">
-        <option disabled selected>Your friend's platform</option>
-        <option>Playstation</option>
-        <option>Xbox</option>
-        <option>Windows</option>
-        <option>Switch</option>
-      </select>
-    </section>
-    <section class="gamesTable">
-      <div class="overflow-x-auto w-full">
-        <table class="table w-full">
-          <!-- head -->
-          <thead>
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-              <th>Title</th>
-              <th>Platforms</th>
-              <th>Genres</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- row 1 -->
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div class="flex items-center space-x-3">
-                  <div class="avatar">
-                    <div class="mask mask-squircle w-12 h-12">
-                      <img
-                        src="./img/aliensfireteamelite.jpg"
-                        alt="Avatar Tailwind CSS Component"
-                      />
+      </section>
+      <section class="heroSection flex">
+        <div class="hero min-h-screen flex justify-center items-center">
+          <div class="hero-content text-center">
+            <div
+              class="hero-content-text space-y-4 flex flex-col max-w-xs w-full"
+            >
+              <h1 class="text-5xl font-bold">Hello there</h1>
+              <p class="hero-content-text-p">
+                Here you can find what to play with friends on different
+                platforms
+              </p>
+              <div class="selectGame flex flex-row justify-center items-center">
+                <select class="select select-primary w-full max-w-xs mr-3">
+                  <option disabled selected>Your platform</option>
+                  <option>Playstation</option>
+                  <option>Xbox</option>
+                  <option>Windows</option>
+                  <option>Switch</option>
+                </select>
+                <select class="select select-primary w-full max-w-xs">
+                  <option disabled selected>Your friend's platform</option>
+                  <option>Playstation</option>
+                  <option>Xbox</option>
+                  <option>Windows</option>
+                  <option>Switch</option>
+                </select>
+              </div>
+              <button class="btn btn-primary">Let's find games</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gamesTable">
+        <div class="overflow-x-auto w-full">
+          <table class="table w-full">
+            <!-- head -->
+            <thead>
+              <tr>
+                <th>
+                  <label>
+                    <input type="checkbox" class="checkbox" />
+                  </label>
+                </th>
+                <th>Title</th>
+                <th>Platforms</th>
+                <th>Genres</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- row 1 -->
+              <tr>
+                <th>
+                  <label>
+                    <input type="checkbox" class="checkbox" />
+                  </label>
+                </th>
+                <td>
+                  <div class="flex items-center space-x-3">
+                    <div class="avatar">
+                      <div class="mask mask-squircle w-12 h-12">
+                        <img
+                          src="./img/aliensfireteamelite.jpg"
+                          alt="Avatar Tailwind CSS Component"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="font-bold">Aliens: Fireteam Elite</div>
                     </div>
                   </div>
-                  <div>
-                    <div class="font-bold">Aliens: Fireteam Elite</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                PS5, PS4, Xbox Series X|S, Xbox One & PC
-                <br />
-                <span class="badge badge-ghost badge-sm"
-                  >Crossplay avalible on all platforms</span
-                >
-              </td>
-              <td>Action, Third Person Shooter</td>
-              <th>
-                <button class="btn btn-ghost btn-xs">details</button>
-              </th>
-            </tr>
-            <!-- row 2 -->
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div class="flex items-center space-x-3">
-                  <div class="avatar">
-                    <div class="mask mask-squircle w-12 h-12">
-                      <img
-                        src="./img/amogus.jpg"
-                        alt="Avatar Tailwind CSS Component"
-                      />
+                </td>
+                <td>
+                  PS5, PS4, Xbox Series X|S, Xbox One & PC
+                  <br />
+                  <span class="badge badge-ghost badge-sm"
+                    >Crossplay avalible on all platforms</span
+                  >
+                </td>
+                <td>Action, Third Person Shooter</td>
+                <th>
+                  <a href="./pages/ginfo.html" class="btn btn-ghost btn-xs"
+                    >details</a
+                  >
+                </th>
+              </tr>
+              <!-- row 2 -->
+              <tr>
+                <th>
+                  <label>
+                    <input type="checkbox" class="checkbox" />
+                  </label>
+                </th>
+                <td>
+                  <div class="flex items-center space-x-3">
+                    <div class="avatar">
+                      <div class="mask mask-squircle w-12 h-12">
+                        <img
+                          src="./img/amogus.jpg"
+                          alt="Avatar Tailwind CSS Component"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="font-bold">Among Us</div>
                     </div>
                   </div>
-                  <div>
-                    <div class="font-bold">Among Us</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                PS5, PS4, Xbox Series X|S, Xbox One, Switch, PC & Mobile Devices
-                <br />
-                <span class="badge badge-ghost badge-sm"
-                  >Crossplay avalible on all platforms</span
-                >
-              </td>
-              <td>Action, Survival</td>
-              <th>
-                <button class="btn btn-ghost btn-xs">details</button>
-              </th>
-            </tr>
-            <!-- row 3 -->
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div class="flex items-center space-x-3">
-                  <div class="avatar">
-                    <div class="mask mask-squircle w-12 h-12">
-                      <img
-                        src="./img/apex.jpg"
-                        alt="Avatar Tailwind CSS Component"
-                      />
+                </td>
+                <td>
+                  PS5, PS4, Xbox Series X|S, Xbox One, Switch, PC & Mobile
+                  Devices
+                  <br />
+                  <span class="badge badge-ghost badge-sm"
+                    >Crossplay avalible on all platforms</span
+                  >
+                </td>
+                <td>Action, Survival</td>
+                <th>
+                  <button class="btn btn-ghost btn-xs">details</button>
+                </th>
+              </tr>
+              <!-- row 3 -->
+              <tr>
+                <th>
+                  <label>
+                    <input type="checkbox" class="checkbox" />
+                  </label>
+                </th>
+                <td>
+                  <div class="flex items-center space-x-3">
+                    <div class="avatar">
+                      <div class="mask mask-squircle w-12 h-12">
+                        <img
+                          src="./img/apex.jpg"
+                          alt="Avatar Tailwind CSS Component"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="font-bold">Apex Legends</div>
                     </div>
                   </div>
-                  <div>
-                    <div class="font-bold">Apex Legends</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                PS5, PS4, Xbox Series X|S, Xbox One, Switch & PC
-                <br />
-                <span class="badge badge-ghost badge-sm"
-                  >Crossplay avalible on all platforms</span
-                >
-              </td>
-              <td>First Person Shooter, Tactical Shooter</td>
-              <th>
-                <button class="btn btn-ghost btn-xs">details</button>
-              </th>
-            </tr>
-            <!-- row 4 -->
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" class="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div class="flex items-center space-x-3">
-                  <div class="avatar">
-                    <div class="mask mask-squircle w-12 h-12">
-                      <img
-                        src="./img/bf2042.jpeg"
-                        alt="Avatar Tailwind CSS Component"
-                      />
+                </td>
+                <td>
+                  PS5, PS4, Xbox Series X|S, Xbox One, Switch & PC
+                  <br />
+                  <span class="badge badge-ghost badge-sm"
+                    >Crossplay avalible on all platforms</span
+                  >
+                </td>
+                <td>First Person Shooter, Tactical Shooter</td>
+                <th>
+                  <button class="btn btn-ghost btn-xs">details</button>
+                </th>
+              </tr>
+              <!-- row 4 -->
+              <tr>
+                <th>
+                  <label>
+                    <input type="checkbox" class="checkbox" />
+                  </label>
+                </th>
+                <td>
+                  <div class="flex items-center space-x-3">
+                    <div class="avatar">
+                      <div class="mask mask-squircle w-12 h-12">
+                        <img
+                          src="./img/bf2042.jpeg"
+                          alt="Avatar Tailwind CSS Component"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="font-bold">Battlefield 2042</div>
                     </div>
                   </div>
-                  <div>
-                    <div class="font-bold">Battlefield 2042</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                PS5, Xbox Series X|S & PC
-                <p>PS4 & Xbox One</p>
-                <br />
-                <span class="badge badge-ghost badge-sm"
-                  >Crossplay avalible between selected platforms</span
-                >
-              </td>
-              <td>Action, First Person Shooter, Tactical Shooter</td>
-              <th>
-                <button class="btn btn-ghost btn-xs">details</button>
-              </th>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+                </td>
+                <td>
+                  PS5, Xbox Series X|S & PC
+                  <p>PS4 & Xbox One</p>
+                  <br />
+                  <span class="badge badge-ghost badge-sm"
+                    >Crossplay avalible between selected platforms</span
+                  >
+                </td>
+                <td>Action, First Person Shooter, Tactical Shooter</td>
+                <th>
+                  <button class="btn btn-ghost btn-xs">details</button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </container>
     <footer class="footer footer-center p-4 bg-base-300 text-base-content">
       <div>
         <p>Copyright © 2022 - All right reserved</p>
